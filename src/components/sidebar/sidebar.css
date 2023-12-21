@@ -1,0 +1,49 @@
+.sidebar {
+  background: #eee1;
+  height: calc(100vh - 50px);
+  flex: 3;
+
+  position: sticky;
+  top: 50px;
+  .sidebarWrapper {
+    height: 100%;
+    padding: 20px 15px;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+
+    .sidebarItems {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+
+      .sidebarListItem {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 1px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 5px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #524848;
+  }
+}

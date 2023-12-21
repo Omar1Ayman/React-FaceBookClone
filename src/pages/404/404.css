@@ -1,0 +1,23 @@
+.notfound {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background: #f0f2f5;
+
+  .content {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+    h1 {
+      box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.4);
+      padding: 10px 50px;
+      background-color: #1775ee;
+      color: #fff;
+    }
+  }
+}
